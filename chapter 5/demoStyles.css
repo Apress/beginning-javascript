@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+	color:#333;
+	font-family:arial,sans-serif;
+	font-size:.87em;
+}
+h1{
+	padding:1.5em 0 0 .5em;
+}
+#content{
+	padding:1em;
+}
+#styleswitcher{
+	position:absolute;
+	top:0;
+	margin:0;
+	padding:.5em 2%;
+	list-style:none;
+	float:left;
+	background:#ccc;
+	width:96%;
+	clear:both;
+}
+
+#styleswitcher li{
+	font-weight:bold;
+	margin:0;
+	padding:0 1em;
+	list-style:none;
+	float:left;
+}
+#styleswitcher a{
+	color:#369;
+}

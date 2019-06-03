@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:.8em;
+	padding:2em;
+	font-family:Verdana,Arial,Sans-Serif;
+}
+h1{
+	font-size:1.8em;
+	font-weight:normal;
+	letter-spacing:-2px;
+	padding:.5em 0;
+	color:#393;
+}
+.error{
+	color:#c00;
+	display:block;
+	font-weight:bold;
+}
+.ex{
+	color:#999;
+	width:30em;
+	font-size:.9em;
+}

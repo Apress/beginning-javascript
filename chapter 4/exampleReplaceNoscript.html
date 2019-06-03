@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: Replacing noscript</title>
+  <script type="text/javascript">
+    function noscript(){
+      if(!document.getElementById || !document.createTextNode){return;}
+      // add more tests as needed (cookies, objects...)
+      var noJSmsg=document.getElementById('noscripting');
+      if(!noJSmsg){return;}
+      var headline='Browser test succeeded';
+      replaceMessage='We tested if your browser is capable of ';
+      replaceMessage+='supporting the application, and all checked out fine. ';
+      replaceMessage+='Please proceed by activating the following link.';
+      var linkMessage='Proceed to application.';
+      var head=document.createElement('h1');
+      head.appendChild(document.createTextNode(headline));    
+      noJSmsg.parentNode.insertBefore(head,noJSmsg);
+      var infoPara=document.createElement('p');
+      infoPara.appendChild(document.createTextNode(replaceMessage));
+      noJSmsg.parentNode.insertBefore(infoPara,noJSmsg);
+      var linkPara=document.createElement('p');
+      var appLink=document.createElement('a');
+      appLink.setAttribute('href','application.aspx');
+      appLink.appendChild(document.createTextNode(linkMessage));
+      linkPara.appendChild(appLink);
+      noJSmsg.parentNode.replaceChild(linkPara,noJSmsg);
+    }
+    window.onload=noscript;
+  </script>
+</head>
+<body>
+<p id="noscripting">We are sorry, but this application needs 
+JavaScript to be enabled to work. Please 
+<a href="contact.html">contact us</a> if you cannot enable 
+scripting and we will try to help you in other ways</p>
+</body>
+</html>

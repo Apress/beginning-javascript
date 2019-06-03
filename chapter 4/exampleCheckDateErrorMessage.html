@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>Date example</title>
+  <style type="text/css">
+    .error{color:#c00;font-weight:bold;}
+  </style>
+  <script type="text/javascript" src="checkDateErrorMessage.js"></script>
+</head>
+<body>
+<h1>Events search</h1>
+<form action="eventssearch.php" method="post" onsubmit="return checkDate();">
+  <p> 
+    <label for="date">Date in the format DD/MM/YYYY:</label><br />
+    <input type="text" id="date" name="date" />
+    <input type="submit" value="Check " />
+    <br />(example 26/04/1975) <span class="error">&nbsp;</span>
+  </p> 
+</form>
+</body>
+</html>

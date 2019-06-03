@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Example: CSS only rollover</title>
+	<style type="text/css">
+		body{
+			font-family:arial,sans-serif;
+			font-size:.9em;
+		}
+		p img{
+			vertical-align:bottom;
+		}
+		h1{
+			font-size:1.2em;
+		}
+		#nav,#nav *{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		#nav{
+			width:103px;
+		}
+		#nav li{
+			width:103px;
+		}
+		#nav a{
+			display:block;
+			text-align:center;
+			text-transform:uppercase;
+			text-decoration:none;
+			color:#000;
+			width:103px;
+			padding-top:6px;
+			height:22px;
+			background:url(doublebutton.gif) top left no-repeat #ccc;
+		}
+		#nav a:hover{
+			background-position:-103px 0;
+		}
+	</style>
+	<script type="text/javascript">
+	</script>
+</head>
+<body>
+<h1>CSS only rollovers with preloading</h1>
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="documentation.html">Docs</a></li>
+	<li><a href="products.html">Products</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</body>
+</html>

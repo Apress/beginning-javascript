@@ -1,0 +1,25 @@
+.minislides, .minislides * {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:none;
+}
+.minislides{
+	clear:both;
+	margin:10px 0;
+	background:#333;
+}
+.minislides,.minislides li{
+	float:left;
+}
+.minislides li img{
+	display:block;
+}
+.minislides li{
+	padding:1px;
+}
+.minislides li.photo{
+	clear:both;
+	padding-top:0;
+}
+p{clear:both;}

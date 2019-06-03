@@ -1,0 +1,34 @@
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		font-size:.8em;
+		font-family:arial,sans-serif;
+		color:#333;
+		background:#fff;
+		padding:.5em;
+	}
+	h1{
+		font-size:1.2em;
+	}
+	p{
+		margin-top:.5em;
+	}
+	.popup{
+		padding:.5em;
+		background:url(indicator_medium.gif) center center no-repeat #eee;
+		border:1px solid #999;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	a.popuplink{
+		background:#eee;
+		padding:0 .5em;	
+		border:1px solid #999;
+		text-decoration:none;
+		font-weight:bold;
+		color:#666;
+		margin-bottom:-1px;
+	}

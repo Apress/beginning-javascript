@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#news{
+  width:800px;
+  float:left;
+}
+#news li{
+	width:190px;
+	margin:0 4px;
+	float:left;
+	background:#eee;
+}
+#news h3{
+	background:#fff;
+	padding-bottom:5px;
+	border-bottom:2px solid #369;
+}
+#news li p{
+	padding:5px;
+}

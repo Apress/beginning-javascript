@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Example of an embedded images slide show</title>
+    <link rel="stylesheet" href="imageProperties.css">
+	<script type="text/javascript" src="../DOMhelp.js"></script>
+	<script type="text/javascript" src="imageProperties.js"></script>
+</head>
+<body>
+<h1>Reading the properties of an image</h1>
+<p class="warning">This is a demonstration page for a JavaScript functionality and needs JavaScript enabled!</p>
+<form action="">
+<p><img src="pictures/thumbs/curious_donkey.jpg" vspace="10" hspace="10" name="pic" id="pic" align="left" width="200" height="267" alt="A Curious Donkey" /></p>
+<fieldset><legend>Image properties</legend>
+	<p><input type="button" onclick="getImageProperties('pic')" value="read properties" />&nbsp;&nbsp;&nbsp;<input type="button" onclick="setImageProperties('pic')" value="write properties" /></p>
+	<p><label for="imgborder">Border: </label><input type="text" name="imgborder" id="imgborder" /></p>
+	<p>Complete: <span id="imgcomplete"></span></p>
+	<p><label for="imgborder">Width: </label><input type="text" name="imgwidth" id="imgwidth" /></p>
+	<p><label for="imgheight">Height: </label><input type="text" name="imgheight" id="imgheight" /></p>
+	<p><label for="imghspace">Hspace: </label><input type="text" name="imghspace" id="imghspace" /></p>
+	<p><label for="imgvspace">Vspace: </label><input type="text" name="imgvspace" id="imgvspace" /></p>
+	<p><label for="imglowsrc">Lowsrc: </label><input type="text" name="imglowsrc" id="imglowsrc" /></p>
+	<p><label for="imgname">Name: </label><input type="text" name="imgname" id="imgname" /></p>
+	<p><label for="imgsrc">Src: </label><input type="text" name="imgsrc" id="imgsrc" /><input type="button" onclick="setImage('pic','pictures/thumbs/dog63.jpg')" value="Set other picture" /></a></p>
+</fieldset>
+</form>
+</body>
+</html>

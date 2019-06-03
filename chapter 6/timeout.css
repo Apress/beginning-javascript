@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:arial,sans-serif;
+	font-size:.8em;
+	padding:.5em;
+}
+#warning{
+	width:250px;
+	font-weight:bold;
+	color:#c00;
+}
+#warning a{
+	display:block;
+	text-align:center;
+	color:#000;
+	padding:.5em 1em;
+}
+.warning{
+	width:250px;
+	padding:.5em;
+	background:#fcc;
+	border:1px solid #c00;
+	font-size:1.5em;
+}

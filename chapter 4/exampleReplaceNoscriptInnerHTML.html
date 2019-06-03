@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: Replacing noscript</title>
+  <script type="text/javascript">
+    function noscript(){
+      if(!document.getElementById || !document.createTextNode){return;}
+      // add more tests as needed (cookies, objects...)
+      var noJSmsg=document.getElementById('noscripting');
+      if(!noJSmsg){return;}
+      var replaceMessage='<h1>Browser test succeeded</h1>';
+      replaceMessage+='<p>We tested if your browser is capable of ';
+      replaceMessage+='supporting the application, and all checked out fine. ';
+      replaceMessage+='Please proceed by activating the following link.</p>';
+      replaceMessage+='<p><a href="application.aspx">Proceed to application</a></p>';
+	  //alert(replaceMessage);
+     // noJSmsg.innerHTML = replaceMessage;
+	 noJSmsg.firstChild.nodeValue = replaceMessage;
+    } 
+	window.onload=noscript;
+	//document.addEventListener("DOMContentLoaded",noscript,false);
+  </script>
+</head>
+<body>
+<div id="noscripting">We are sorry, but this application needs JavaScript to be 
+  enabled to work. Please <a href="contact.html">contact us</a> if you cannot 
+  enable scripting and we will try to help you in other ways.</div>
+</body>
+</html>

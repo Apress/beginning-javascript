@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+	<title>Example: Window properties</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+	function winProps(){
+		var winWidth=window.outerWidth;
+		var winHeight=window.outerHeight;
+		var docWidth=window.innerWidth;
+		var docHeight=window.innerHeight;
+		var message='This window is ';
+		message+=winWidth+' pixels wide and ';
+		message+=winHeight+' pixels high.\n';
+		message+='The inner dimensions are:';
+		message+=docWidth+' * '+docHeight+' pixels';
+		alert(message);
+	}
+ 	  window.addEventListener("DOMContentLoaded", winProps, false);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

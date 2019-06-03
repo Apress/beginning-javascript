@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Example: Simple roll-over effect</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		function rollover(img,url){
+			document.images[img].src=url;
+		}
+	</script>
+</head>
+<body>
+<a href="contact.html" 
+   onmouseover="rollover('contact','but_contact_on.gif')" 
+   onmouseout="rollover('contact','but_contact.gif')">
+	<img src="but_contact.gif" name="contact" 
+	 width="103" height="28" alt="Contact Us" border="0" />
+</a>
+</body>
+</html>

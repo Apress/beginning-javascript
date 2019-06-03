@@ -1,0 +1,47 @@
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		font-size:.8em;
+		font-family:arial,sans-serif;
+		color:#333;
+		background:#fff;
+		padding:.5em;
+	}
+	h1{
+		font-size:1.2em;
+	}
+	p{
+		margin-top:.5em;
+	}
+	#layerad{
+		margin:.5em;
+		padding:.5em;
+	}
+	#layerad h2{
+		font-size:1.2em;
+		margin-top:.5em;
+	}
+	#layerad ul{
+		list-style:square;
+		margin-left:1em;
+		padding:.5em;
+	}
+	#layerad li{
+		line-height:1.3em;
+		padding:.2em 0;
+	}
+	#layerad.dyn{
+		position:absolute;
+		top:1em;
+		left:1em;
+		background:#eef;
+		border:1px solid #999;
+	}
+	#layerad.dyn a.adclose{
+		color:#000;
+		display:block;
+		text-align:right;
+	}
+	

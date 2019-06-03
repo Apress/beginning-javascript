@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Example: How to read the window location</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		function readloc(){
+			var p,message='';
+			var props=['hash','host','hostname','href','pathname','port','protocol','search'];
+			for (var i=0;i<props.length;i++){
+				p=eval('window.location.'+props[i]);
+				if(p){
+					message+=props[i]+':'+p+'\n';
+				}
+			}
+			alert(message);
+		
+		}
+	</script>
+</head>
+<body>
+<form action="">
+<p><input type="button" onclick="readloc()"><input type="text" value="dd" name="ss"></p>
+<input type="submit" value="bah" value="dd">
+</form>
+ hash (Ankername innerhalb eines URI)
+host (Domain-Name innerhalb eines URI)
+hostname (Domain-Name innerhalb eines URI)
+href (URI / Verweis zu URI)
+pathname (Pfadname innerhalb eines URI)
+port (Portangabe innerhalb eines URI)
+protocol (Protokollangabe innerhalb eines URI)
+search (Parameter innerhalb eines URI)		
+
+</body>
+</html>

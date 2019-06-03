@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Date example</title>
+  <script type="text/javascript">
+	function checkDate(){
+	  if(!document.getElementById || !document.createTextNode){return;}
+	  if(!document.getElementById('date')){return;}
+	  // define a regular Expression to check the date format
+	  var checkPattern=new RegExp("\\d{2}/\\d{2}/\\d{4}");
+	  // get the value of the date entry field
+	  var dateValue=document.getElementById('date').value;
+	  // if there is no date entered, don't send the form
+	  if(dateValue==''){
+	    alert('Please enter a date');
+	    return false
+	  } else {
+	    // tell the user to change the date syntax either until 
+	    // she pressed cancel or entered the right syntax
+	    while(!checkPattern.test(dateValue) && dateValue!=null){
+	      dateValue=prompt('Your date was not in the right format. '
+              + 'Please enter it as DD/MM/YYYY.', dateValue);
+	    }
+	    return dateValue!=null;
+	  }
+	}
+  </script>
+</head>
+<body>
+<h1>Events search</h1>
+<form action="eventssearch.php" method="post" onsubmit="return checkDate();">
+  <p> 
+    <label for="date">Date in the format DD/MM/YYYY:</label><br />
+    <input type="text" id="date" name="date" />
+    <input type="submit" value="Check " />
+    <br />(example 26/04/1975)
+  </p> 
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:verdana,sans-serif;
+	background:#000;
+	color:#ccc;
+}
+h1{
+	clear:both;
+	padding:1.5em 0 0 .5em;
+}
+#content{
+	padding:1em;
+}
+#styleswitcher{
+	position:absolute;
+	top:0;
+	margin:0;
+	padding:.5em 2%;
+	list-style:none;
+	float:left;
+	width:96%;
+	clear:both;
+}
+
+#styleswitcher li{
+	font-weight:bold;
+	margin:0;
+	padding:0 1em;
+	list-style:none;
+	float:left;
+}
+#styleswitcher a{
+	color:#6c6;
+}
+

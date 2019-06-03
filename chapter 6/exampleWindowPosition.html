@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+	<title>Example: Changing the position and the dimensions of a window</title>
+    <link rel="stylesheet" href="imageProperties.css">
+	<style type="text/css">
+		#demobuttons{display:none;}
+	</style>
+	<script type="text/javascript">
+		function openWin(){
+			win = window.open('grid.html','mywin',"width=200,height=200,left=200,top=250,status=no,toolbar=no,menubar=no,location=no");
+			document.getElementById('demobuttons').style.display='block';
+		}
+	</script>
+</head>
+<body>
+<form action="">
+<h1>Window position and dimensions</h1>
+<p class="warning">This is a demonstration page for a<br />JavaScript functionality and needs JavaScript enabled!</p>
+<p><input type="button" value="win=window.open()" onclick="openWin()"></p>
+<div id="demobuttons">
+	<p><input type="button" value="win.moveBy(10,10)" onclick="win.focus();win.moveBy(10,10);"></p>
+	<p><input type="button" value="win.moveTo(150,150)" onclick="win.focus();win.moveTo(150,150)"></p>
+	<p><input type="button" value="win.resizeBy(10,10)" onclick="win.focus();win.resizeBy(10,10);"></p>
+	<p><input type="button" value="win.resizeTo(150,150)" onclick="win.focus();win.resizeTo(150,150)"></p>
+	<p><input type="button" value="win.scrollBy(10,10)" onclick="win.focus();win.scrollBy(10,10);"></p>
+	<p><input type="button" value="win.scrollTo(200,200)" onclick="win.focus();win.scrollTo(200,200);"></p>
+</div>
+</form>
+</body>
+</html>

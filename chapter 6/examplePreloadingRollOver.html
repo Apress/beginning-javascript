@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Example: Simple roll-over effect</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		// preloading images
+		contactoff = new Image(); 
+		contactoff.src = 'but_contact.gif';
+		contacton = new Image(); 
+		contacton.src = 'but_contact_on.gif';
+		function rollover(img,state) 
+		{
+		 var imgState=state==1?eval(img + 'on.src'):eval(img + 'off.src');
+		 document.images[img].src = imgState;
+		}	
+	</script>
+</head>
+<body>
+<a href="contact.html" 
+   onmouseover="rollover('contact',1)" 
+   onmouseout="rollover('contact',0)">
+	<img src="but_contact.gif" name="contact" 
+	 width="103" height="28" alt="Contact Us" border="0" />
+</a>
+</body>
+</html>

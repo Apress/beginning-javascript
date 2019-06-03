@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Advanced Search example!</title>
+  <script>
+    function checkSearch(){
+    
+      if(!document.getElementById('search')){return;}
+      var searchValue=document.getElementById('search').value;
+      if(searchValue==''){
+       alert('Please enter a search term before sending the form');
+       return false;
+      } else if(searchValue=='JavaScript'){
+       var really=confirm('"JavaScript" is a very common term.\n'+  'Do you really want to search for this?');
+       return really;
+      } else {
+       return true;
+      } 
+    }
+  </script>
+</head>
+<body>
+<form action="sitesearch.php" method="post" onsubmit="return checkSearch();">
+  <p> 
+    <label for="search">Search the site:</label>
+    <input type="text" id="search" name="search" />
+    <input type="submit" value="Search" />
+  </p> 
+</form>
+</body>
+</html>

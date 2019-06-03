@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+	<title>Example: Opening a window via a link</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+	function popup(){
+		var windowprops="width=200,height=200,top=100,left=100";
+		var myWin =  window.open("grid.html","mynewwin",windowprops);
+	}
+	</script>
+</head>
+<body>
+<p>
+	<a href="#" onclick="popup();return false">
+		Open grid
+	</a>
+</p>
+</body>
+</html>

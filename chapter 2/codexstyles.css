@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(learner.gif) top left no-repeat #fff;
+	font-family:arial,sans-serif;
+	font-size:100.01%;
+}
+#boundary{
+	margin-left:250px;
+	font-size:.9em;
+	background:url(coffeestain.gif) 90% 90% no-repeat fixed #fff;
+}
+h1{
+	font-size:1.3em;
+	font-family:"Trebuchet MS", Arial,Sans-serif;
+	padding-left:250px;
+}
+h2{
+	font-size:1.1em;
+	font-family:"Trebuchet MS", Arial,Sans-serif;
+	padding:1em 0;
+	color:#900;
+}
+ul{
+	margin-left:1em;
+	clear:both;
+}
+h3{
+	font-size:1em;
+	padding:.5em 0 0 0;
+}
+li{
+	line-height:1.3em;
+	padding:.2em 0;
+	list-style:square;
+}
+a:link{
+	color:#369;
+}
+a:visited{
+	color:#69c;
+}
+a:link{
+	color:#369;
+}
+a:link{
+	color:#369;
+}
+#download a,#back a,#home a{
+  font-size:1.2em;
+  font-weight:bold;
+  background:#ddf;
+  float:left;
+  padding:.2em .5em;
+}
+#download a:hover{
+  font-size:1.2em;
+  font-weight:bold;
+  background:#ffc;
+  float:left;
+  padding:.2em .5em;
+}
+#back a,#home a{
+	float:none;
+	background:#fff;
+	color:#333;
+}
+#back{
+	padding:.5em 0;
+}
+#home{
+	clear:both;
+	padding:.5em 0;
+}
+a.dl{
+	font-weight:normal;
+	font-size:.9em;
+	color:#333;
+}
+#toc{
+	margin:1em;
+	width:90%;
+}
+#toc a{
+	font-weight:bold;
+}

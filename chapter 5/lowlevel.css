@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:Arial,Sans-Serif;
+  font-size:small;
+  padding:2em;
+}
+
+/* JS disabled */
+address{
+  background:#ddd;
+  border:1px solid #999;
+  border-top:none;
+  font-style:normal;
+  padding:.5em;
+  width:15em;
+}
+h3{
+  border:1px solid #000;
+  color:#fff;
+  background:#369;
+  padding:.2em .5em;
+  width:15em;
+  font-size:1em;
+}

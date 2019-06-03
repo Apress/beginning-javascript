@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Verdana,Arial,Sans-Serif;
+	font-size:100.01%;
+	background:#ccf;
+	text-align:center;
+}
+#boundary{
+	font-size:.8em;
+	width:40em;
+	margin:0 auto;
+	text-align:left;
+	background:#f8f8f8;
+	padding:0;
+	padding-bottom:1em;
+}
+pre{
+	font-size:1.1em;
+	padding:0 2em .5em 2em;
+}
+ul{
+	margin:1em 3em;
+	list-style:square;
+}
+li{
+	padding:5px 0;
+}
+p{
+	clear:both;
+	padding:0 2em .5em 2em;
+	line-height:1.3em;
+}
+h1{
+	background:#369;
+	color:#fff;
+	font-size:1.2em;
+	padding:5px 1em;
+	margin-bottom:.5em;
+}
+h2{
+	font-size:1.2em;
+	padding:5px 1em;
+	clear:both;
+}
+.minislides{
+	margin-left:3em;
+}

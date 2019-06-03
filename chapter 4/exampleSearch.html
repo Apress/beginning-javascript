@@ -1,0 +1,29 @@
+<!DOCTYPE HTML >
+<html dir="ltr" lang="en">
+<head>
+  <meta  charset="utf-8" /> 
+  <title>Search example</title>
+  <script>
+   function checkSearch(){
+
+     if(!document.getElementById('search')){return;}
+     var searchValue=document.getElementById('search').value;
+     if(searchValue==''){
+            alert('Please enter a search term');
+           return false;
+         } else {
+           return true;
+       }
+     }
+  </script>
+</head>
+<body>
+<form action="sitesearch.php" method="post" onsubmit="return checkSearch();">
+  <p> 
+    <label for="search">Search the site:</label>
+    <input type="text" id="search" name="search" />
+    <input type="submit" value="Search" />
+  </p> 
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body{
+	margin:0;
+	padding:2em;
+	font-family:arial,sans-serif;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+li img{
+	vertical-align:middle;
+	border:none;
+}

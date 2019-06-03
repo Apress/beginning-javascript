@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+	<title>Example: Providing a link to the last page via window.back()</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		function backlink(){
+		  var p=document.getElementById('back');
+		  if(p){
+		    var newa=document.createElement('a');
+		    newa.setAttribute('href','#');
+		    newa.appendChild(document.createTextNode('back to previous page'));
+			newa.onclick=function(){window.back();return false}
+		    p.replaceChild(newa,p.firstChild);
+		  }
+		}
+		window.onload=backlink;
+	</script>
+</head>
+<body>
+<p id="back">Please use your browser's back button or keyboard shortcut to go to the previous page</p>
+
+</body>
+</html>
